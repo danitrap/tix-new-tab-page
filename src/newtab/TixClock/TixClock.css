@@ -1,0 +1,59 @@
+.digitContainer {
+  display: grid;
+  gap: 8px;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Prima cifra: 3 quadrati in colonna */
+.digit1 {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}
+
+/* Seconda cifra: 3x3 grid */
+.digit2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* Terza cifra: 2x3 grid */
+.digit3 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* Quarta cifra: 3x3 grid */
+.digit4 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.digit1 .lit {
+  background-color: #ff4444;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+}
+
+.digit2 .lit {
+  background-color: #00ff99;
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+}
+
+.digit3 .lit {
+  background-color: #4444ff;
+  box-shadow: 0 0 15px rgba(68, 68, 255, 0.5);
+}
+
+.digit4 .lit {
+  background-color: #ff4444;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+}
